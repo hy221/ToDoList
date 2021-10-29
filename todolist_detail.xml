@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="320dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="#E4E4E4"
+        android:ems="10"
+        android:freezesText="false"
+        android:gravity="left"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/button_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="62dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_title"
+        app:srcCompat="@drawable/calendar_today_24" />
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/textView_detail"
+        android:layout_width="379dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:background="#E4E4E4"
+        android:hint="Memo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_cal"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        app:layout_constraintStart_toEndOf="@+id/Button_Time"
+        app:layout_constraintTop_toBottomOf="@+id/editText_title" />
+
+    <ImageButton
+        android:id="@+id/Button_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="37dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/textView_cal"
+        app:layout_constraintStart_toEndOf="@+id/button_notification"
+        app:layout_constraintTop_toBottomOf="@+id/editText_title"
+        app:srcCompat="@drawable/access_time_24" />
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="126dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintStart_toEndOf="@+id/Button_Time"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cal" />
+
+    <ImageButton
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/done_outline_24" />
+
+    <!--
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="102dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#00FFFFFF"
+        tools:srcCompat="@drawable/circle_red" />
+        -->
+</androidx.constraintlayout.widget.ConstraintLayout>
